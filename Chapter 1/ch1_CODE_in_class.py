@@ -7,67 +7,74 @@ naming variables correctly, and identifying common syntax and runtime errors.
 """
 
 # --- Slide 2 (First Program)
-
-
+# greet = "Hello world!"
+# print(greet)
 
 
 # --- Slide 4 (Variables)
-
+greet = "Hello world!"
 # 1) Python creates memory containers in physical memory
 
-pass # Shows the memory location of the variable
+# print(id(greet)) # Shows the memory location of the variable
 
 
 #2) Variables need to be given an initial value
-pass # 'Bob' is the initial value
-pass # We get an error if we do not give a value to a variable
+# name = 'Bob' # 'Bob' is the initial value
+# name # We get an error if we do not give a value to a variable
 
 
 
 #3) Variables with the same data are given the same memory location
-
+# name = 'bob'
+# same_name = 'bob'
+#
+# print(id(name))
+# print(id(same_name))
 
 
 #4) Variables can be overwritten
-
-
-
+# age = 18
+# print(age)
+#
+# age = 19
+# print(age)
 
 
 # --- Slide 6 (Data types)
-pass # integer (int) data type
-pass # decimal (float) value
-
-pass # Character (char)
-pass # Text (String) data
-
-pass # Boolean (Bool) data type
+# value = 2 # integer (int) data type
+# temp = 93.5 # decimal (float) value
+#
+# symbol = '@' # Character (char)
+# message = "Hello" # Text (String) data
+#
+# success = False # Boolean (Bool) data type
 
 
 # We can check or verify a data type by using the 'type' command
-pass # Replace with a variable whose type you want to check (Notice a character is also treated like a string
-
+# age = '1'
+# print(type(age)) # Replace with a variable whose type you want to check (Notice a character is also treated like a string
 
 
 
 # --- Slide 7 (Dynamically typed)
 # 1) By declaring 'version' as 11, Python knows it is an int
-
-
+# version = 11
+# print(type(version))
 
 
 # 2) Two literals that appear similar can be of different types
-
-pass # Both show up as 11 but one is an int literal and another is a string literal
-
-
+# diff_version = '11'
+# print(version) # Both show up as 11 but one is an int literal and another is a string literal
+# print(diff_version)
+# print(type(version), type(diff_version))
 
 # --- Slide 8 Input
-pass
+first_name = input("What is your first name? ")
+last_name = input("Enter your last name, please: ")
 
-pass # Comma separated values
-pass # String concatanation
-pass # F-string
+print("hello", first_name, last_name) # Comma separated values
+print("wazzzuuuuup " + first_name + " " + last_name) # String concatanation
+print(f"Hello {first_name} {last_name}") # F-string
 
 
 # --- Slide 9 ACTIVITY
@@ -99,6 +106,8 @@ pass # Useful if we want to convert BACK into a string
 
 
 
+
+
 # --- Slide 11 Outputting Multiple Expressions
 pass
 
@@ -127,6 +136,8 @@ pass # Comma separated elements are not limited to strings data types.
 #3) F-Strings are often the preferred way to build strings as they can be easiest to work with
 
 
+
+
 # --- Slide 12 Performing Math Operations
 pass
 
@@ -146,10 +157,11 @@ pass # Results in a float
 
 
 
-# Modulus (Mod) Operation displays the reminder when the first number is divided by the second.
+# Slide 13 --- Modulus (Mod) Operation displays the reminder when the first number is divided by the second.
 pass # Answer:
 pass # Answer:
 pass # Answer:
+
 
 
 # Exponents
@@ -192,7 +204,7 @@ pass # The new line character is the most common escape character
 
 
 
-# --- Slide 17 End of Line and Seperator Arguments
+# --- Slide 17 and 18 End of Line and Seperator Arguments
 color1 = 'red'
 color2 = 'green'
 color3 = 'blue'
@@ -211,7 +223,7 @@ pass # Puts a space by default
 pass # Place two stars between data elements rather than a space
 
 
-# --- slide 18 Variable Naming
+# --- slide 19 Variable Naming
 # Example of valid names for variables
 pass
 
