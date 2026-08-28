@@ -149,41 +149,45 @@ print(f"Call me {last_name} {first_name} {last_name} {age}")
 
 
 # --- Slide 12 Performing Math Operations
-pass
+a = 2
+b = 4
+c = 8
+d = 1.2
 
 
 
-# Addition and subtraction
-pass # Results in an int
-pass # Results in a float
-
+# Addition and subtraction and multiplication
+# print(a + b) # Results in an int
+# print(a + b + d) # Results in a float
+# print(a * d)
+#
 
 # Traditional Division - Always results in a float
-
+# print(c/a) # Answer is 4.0 NOT 4
 
 
 # Quotient Division (Always rounds DOWN - drops the decimal in the result)
-
+# print(10//9)
+# print(99//100)
 
 
 
 # Slide 13 --- Modulus (Mod) Operation displays the reminder when the first number is divided by the second.
-pass # Answer:
-pass # Answer:
-pass # Answer:
-
-
+# print(14 % 3) # Answer: 2
+# print(17%5) # Answer: 2
+# print(25 % 9)# Answer: 7
+#
 
 # Exponents
-
+# print(5**2)
+# print(100**0.5)
 
 
 # Rounding Decimals
-
-pass # No rounding
-pass # Round to one decimal place
-pass # Round to two decimal places (and we can keep going)
-
+r = 25/13
+# print(r) # No rounding
+# print(round(r, 1)) # Round to one decimal place
+# print(round(r, 2)) # Round to two decimal places (and we can keep going)
 
 
 # --- Slide 15 Comments
@@ -201,17 +205,17 @@ It can also be used to attribute the author and date the program was written
 """
 Escape Characters are characters that perform an action to a sting rather then conveying information.
 """
-pass # The new line character is the most common escape character
+print('Hello. \nHow \nare \nyou?') # The new line character is the most common escape character
 
 # Try Each of the following below to see how the escape characters work
 # print("1. hello " + 'there') #Substitute one of the escape chars for the '#'
-# print("2. hello\b " + ' there') # backspace
-# print("3. hello\n " + ' there') # Newlinw
-# print("4. hello\t " + ' there') # Tab
-# print("5. hello\\ " + ' there') # Single forward slash (\) character
-# print("6. hello\' " + ' there') # Single quotation (') character
-# print("7.hello\" " + ' there') # Double quotation (") character
-
+print("2. hello\b " + ' there') # backspace
+print("3. hello\n " + ' there') # Newline
+print("4. hello\t\t\t " + ' there') # Tab
+print("5. hello\\ " + ' there') # Single forward slash (\) character
+print("6. hello\' " + ' there') # Single quotation (') character
+print("7.hello\" " + ' there') # Double quotation (") character
+print("hi\n"*100) 
 
 
 # --- Slide 17 and 18 End of Line and Seperator Arguments
