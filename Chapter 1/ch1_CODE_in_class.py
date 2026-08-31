@@ -140,11 +140,11 @@ Comma seperated elements can be off any data type and are printed as seperate el
 
 #2) Comma Separated Values
 
-print("Call me", last_name, first_name, last_name) # Comma separated elements are not limited to strings data types.
-print('I am', age, 'years old.')
+# print("Call me", last_name, first_name, last_name) # Comma separated elements are not limited to strings data types.
+# print('I am', age, 'years old.')
 
 #3) F-Strings are often the preferred way to build strings as they can be easiest to work with
-print(f"Call me {last_name} {first_name} {last_name} {age}")
+# print(f"Call me {last_name} {first_name} {last_name} {age}")
 
 
 
@@ -205,18 +205,18 @@ It can also be used to attribute the author and date the program was written
 """
 Escape Characters are characters that perform an action to a sting rather then conveying information.
 """
-print('Hello. \nHow \nare \nyou?') # The new line character is the most common escape character
+# print('Hello. \nHow \nare \nyou?') # The new line character is the most common escape character
 
 # Try Each of the following below to see how the escape characters work
 # print("1. hello " + 'there') #Substitute one of the escape chars for the '#'
-print("2. hello\b " + ' there') # backspace
-print("3. hello\n " + ' there') # Newline
-print("4. hello\t\t\t " + ' there') # Tab
-print("5. hello\\ " + ' there') # Single forward slash (\) character
-print("6. hello\' " + ' there') # Single quotation (') character
-print("7.hello\" " + ' there') # Double quotation (") character
-print("hi\n"*100) 
-
+# print("2. hello\b " + ' there') # backspace
+# print("3. hello\n " + ' there') # Newline
+# print("4. hello\t\t\t " + ' there') # Tab
+# print("5. hello\\ " + ' there') # Single forward slash (\) character
+# print("6. hello\' " + ' there') # Single quotation (') character
+# print("7.hello\" " + ' there') # Double quotation (") character
+# print("hi\n"*100)
+#
 
 # --- Slide 17 and 18 End of Line and Seperator Arguments
 color1 = 'red'
@@ -224,27 +224,32 @@ color2 = 'green'
 color3 = 'blue'
 
 # By default, there is a newline character at the end of every print statement
-# print(color1)
-# print(color2)
+print(color1)
+print(color2)
 
 # We can change the newline to another character(s)
-pass # Use a space instead of a new line
+print(color1, end = ' ') # Use a space instead of a new line
+print(color2, end = ' :) ')
+print(color3)
 
 
 
 # We can change the seperator using the sep parameter
-pass # Puts a space by default
-pass # Place two stars between data elements rather than a space
+print(color1, color2, color3) # Puts a space by default
+print(color1, color2, color3, sep = ' :) ')# Place two stars between data elements rather than a space
 
 
 # --- slide 19 Variable Naming
 # Example of valid names for variables
-pass
-
+count = 0
+_count = 0
+count100 = 0
+count_to_100 = 0
 
 # Invalid variable names
-pass
-
+# 1count = 0
+# if = 0
+# count! = 0
 
 # --- Slide 20 ACTIVITY variable naming
 """
@@ -254,17 +259,23 @@ Create three INVALID variables in three different ways and set them equal to the
 
 
 # --- Slide 21 Variable Assignment
-pass # Declare and initialize a variable - it is automatically recognized as a string
-pass # This overwrites my_var into a string
-pass # Doubles the value of my_var and stored back into itself
+my_var = "Hey there" # Declare and initialize a variable - it is automatically recognized as a string
+my_var = 3.14 # This overwrites my_var into a float
+my_var = my_var * 2 # Doubles the value of my_var and stored back into itself
 
 
 # Variables can be manipulated relative to other variables
 x = 25
 y = 5
 
+x = x + y
+print(x)
 
+y = x/y
+print(y)
 
+y = y * y
+print(y)
 
 # --- Slide 22 String Multiplication
 """
@@ -275,16 +286,19 @@ s1 = 'waaz'
 s2 = 'a'
 s3 = 'p'
 
-pass
+# print(s1 + s2 * 7 + s3)
+# print((s1 + s2 * 7 + s3+ ' ') * 3)
 
 
 # --- Slide 23 ACTIVITY
 """
 Write a print statement that outputs the string seen in slide 23 of the powerpoint
 """
+# up = '^'*10
+# hashtag = '#'*10
+# print(up, hashtag, hashtag, hashtag, up, sep='\n')
 
-
-
+print(('^' * 10 + '\n') + (('#' * 10 + '\n')*3) + ('^' * 10 + '\n'))
 
 # --- Slide 24 Errors (Run-Time vs. Syntax)
 ## Run Time Errors
