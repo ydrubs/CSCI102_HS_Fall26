@@ -269,13 +269,13 @@ x = 25
 y = 5
 
 x = x + y
-print(x)
-
-y = x/y
-print(y)
-
-y = y * y
-print(y)
+# print(x)
+#
+# y = x/y
+# print(y)
+#
+# y = y * y
+# print(y)
 
 # --- Slide 22 String Multiplication
 """
@@ -298,7 +298,7 @@ Write a print statement that outputs the string seen in slide 23 of the powerpoi
 # hashtag = '#'*10
 # print(up, hashtag, hashtag, hashtag, up, sep='\n')
 
-print(('^' * 10 + '\n') + (('#' * 10 + '\n')*3) + ('^' * 10 + '\n'))
+# print(('^' * 10 + '\n') + (('#' * 10 + '\n')*3) + ('^' * 10 + '\n'))
 
 # --- Slide 24 Errors (Run-Time vs. Syntax)
 ## Run Time Errors
@@ -311,6 +311,6 @@ print(('^' * 10 + '\n') + (('#' * 10 + '\n')*3) + ('^' * 10 + '\n'))
 
 
 ## Syntax Errors
-#  print("Hi")
-# print("hi"
+ # print("Hi") # THis is a run-time error
+# print((("hi"))
 # print("hi')
