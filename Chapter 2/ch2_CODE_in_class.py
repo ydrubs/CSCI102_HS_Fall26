@@ -190,7 +190,7 @@ However, it is much more conventional to use augmented assignment to do the same
 """
 a = 5
 b = 5
-print(a, b)
+# print(a, b)
 
 pass
 
@@ -220,7 +220,7 @@ pass
 
 ##Slide 29 - While Loop for entering data
 theSum = 0.0
-data = input('Enter a number or just enter to quit: ')
+# data = input('Enter a number or just enter to quit: ')
 pass
 
 
@@ -229,7 +229,7 @@ pass
 theSum = 0.0
 
 while True:
-    data = input("Enter a number or just enter to quit: ")
+    # data = input("Enter a number or just enter to quit: ")
     pass
 
 
