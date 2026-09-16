@@ -11,23 +11,48 @@ control how many times code runs, validate user input, and combine loops and con
 """
 Decide if a block of code will run based on a condition
 """
+# name = input("Enter your name: ")
+#
+# if name == 'admin':
+#     print("Access granted!")
+#
+# print()
+# print("Other code")
 
 
 #Slide 5 - If/else statement
 """
 Gives the ability to run an alternative condition if the first one does not trigger the code block
 """
-
+# name = input("Enter your name: ")
+#
+# if name == 'admin':
+#     print("Access granted!")
+#
+# else:
+#     print("Step off you!")
+#
+# print("Other code")
 
 ##Slide 6: Multi-way selection
 """
 Checks multiple conditions to decide which block to run
 """
-
-
+# grade = int(input("Enter your grade: "))
+# if grade > 89:
+#     print("Good job!")
+#
+# elif grade > 79:
+#     print("Not bad")
+#
+# elif grade > 69:
+#     print("Room to improve")
+#
+# else:
+#     print("Better luck next time!")
 
 # --- WHAT HAPPENS IF WE CHANGE THE FIRST ELIF TO AN IF?
-
+## .... We will have TWO indepedent conditionals to check
 
 
 ## --- ANOTHER EXAMPLE
@@ -47,7 +72,6 @@ Checks multiple conditions to decide which block to run
 
 
 ##Slide 7 ACTIVITY
-
 
 
 ##Slide 8 -Boolean Expressions
