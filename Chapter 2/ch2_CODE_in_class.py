@@ -78,18 +78,36 @@ Checks multiple conditions to decide which block to run
 """
 Ability to compare TWO OR MORE things that can be quantified (given a numeric value)
 """
+# x = 10
+# y = 5
+# z = 2
+#
+# print(x == y) #ANSWER: FALSE
+# print(x > y) # ANSWER: TRUE
+# print(x > x/z) #ANSWER: TRUE
 
+# print(x != y) #ANSWER: TRUE
+# print(x.__ne__(y)) # SAME THING AS LINE ABOVE
+# print(x.__gt__(y))
+
+l1 = 'a'
+l2 = 'A'
+
+# print(l1 > l2)
 
 
 
 ##Slide 10: Logical Operators
-# a = True
-# b = False
+a = True
+b = False
 #
 #
-# print(a or(a and b)) # ANSWER:
-# print(b and (a or b)) # ANSWER:
+# print(a or(a and b)) # ANSWER: TRUE
+#
+# print(b and (a or b)) # ANSWER: FALSE
+#
 # print(not b or (a and b)) # ANSWER:
+#
 # print(a and not b or b and not a) # ANSWER:
 
 
@@ -99,15 +117,18 @@ Ability to compare TWO OR MORE things that can be quantified (given a numeric va
 
 ##slide 11 - Evaluating Logic statements
 # grade = int(input("What is your grade: "))
-# if pass:
+# if grade >=90 and grade < 101:
 #     print('Nice Job')
-# elif pass:
+#
+# elif grade < 90 and grade >= 80:
 #     print('Not bad')
-# elif pass:
+#
+# elif grade > 80:
 #     print('There is room for improvement')
+#
 # else:
 #     print("Better luck next time")
-
+#
 
 
 ## Slide 12 Activity
@@ -126,6 +147,8 @@ Write a multi-way conditional that does the following:
 	3) If the username does not match, print (‘no user found)
 
 """
+valid_username = 'user123'
+is_active = True
 
 
 
