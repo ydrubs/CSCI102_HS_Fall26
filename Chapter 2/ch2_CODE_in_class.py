@@ -150,6 +150,25 @@ Write a multi-way conditional that does the following:
 valid_username = 'user123'
 is_active = True
 
+user = input("Enter your username: ")
+
+# if user == valid_username and is_active == True:
+#     print('access granted')
+#
+# elif user == valid_username and is_active != True:
+#     print('acess denied')
+#
+# elif user != valid_username:
+#     print("No user found")
+
+# if user == valid_username and is_active:
+#     print('access granted')
+#
+# elif user == valid_username and not is_active:
+#     print('acess denied')
+#
+# elif user != valid_username:
+#     print("No user found")
 
 
 ##Slide 15 - using a for loop
