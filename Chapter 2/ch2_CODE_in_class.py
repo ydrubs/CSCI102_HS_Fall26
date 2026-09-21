@@ -150,7 +150,7 @@ Write a multi-way conditional that does the following:
 valid_username = 'user123'
 is_active = True
 
-user = input("Enter your username: ")
+# user = input("Enter your username: ")
 
 # if user == valid_username and is_active == True:
 #     print('access granted')
@@ -175,23 +175,41 @@ user = input("Enter your username: ")
 """
 A for loop is used to run a block of code a defined number of times (called a definite loop)
 """
-pass
+a = 4
+b = 'hello'
+
+# for number in range(a):
+#     # print(number, b)
+#     number = number + 1
+#     print(number)
+
 
 
 ## using a conditional in a for loop
-pass
-
-
+# for n in b:
+#     # print(n)
+#     if n != 'he':
+#         print(n)
 
 
 ##Slide 17 - Looping through an algorithm
-
+# number = 0
+# print(number)
+#
+# for i in range(10):
+#     number = number + 3
+#     print(number)
 
 
 
 
 ##Slide 18 - Another example
-
+# total = 1
+# product = 2
+#
+# for i in range(8):
+#     total = total * product
+#     print(total)
 
 
 
@@ -202,7 +220,9 @@ The loop counter is a variable that lets Python keep track of how many times the
 
 Anytime there is a need to use that information in our code block, the loop counter variable can be called.
 """
-pass
+#COUNT to 10
+# for i in range(11):
+#     print(i, end=' ')
 
 
 
@@ -222,16 +242,20 @@ Write a for loop that counts 20 ‘Mississippis’, such as -
 ...
 20 Mississippi
 """""
-pass
-
+#
+# for i in range(20):
+#     i = i + 1
+#     print(i, 'Missisipi')
+#
 
 
 ##Slide21 - Controlling the loop range
 """
 The SECOND ARGUMENT in the loop range tells what number the loop counter should START counting on
 """
-pass
-
+# for i in range(5,20):
+#     print(i)
+#
 
 
 ##SLide 22 - - Controlling the loop range; counting by...
@@ -239,11 +263,18 @@ pass
 The THIRD ARGUMENT inside of the range command tells the loop counter how much to count by
 """
 # Count by threes
-pass
+# for i in range(0,100,5):
+#     print(i)
+
 
 # Count backwards from 100
-pass
+for i in range(100, -100, -1):
+    print(i)
 
+a = True
+b = False
+
+print(a and b)
 
 
 ##Slide 23 - Augmented Assignment
