@@ -268,13 +268,13 @@ The THIRD ARGUMENT inside of the range command tells the loop counter how much t
 
 
 # Count backwards from 100
-for i in range(100, -100, -1):
-    print(i)
-
-a = True
-b = False
-
-print(a and b)
+# for i in range(100, -100, -1):
+#     print(i)
+#
+# a = True
+# b = False
+#
+# print(a and b)
 
 
 ##Slide 23 - Augmented Assignment
@@ -287,14 +287,55 @@ However, it is much more conventional to use augmented assignment to do the same
 """
 a = 5
 b = 5
-# print(a, b)
+print(a, b)
 
-pass
+a +=5
+b -=2
+print(a,b)
 
 
-pass
+c = 2
+d = 3
 
-pass
+c *=5
+d **=0.5
+print(c,d)
+
+#################################PRACTICE###########################
+total = 1
+#
+# for i in range(3):
+#     n = int(input("Please enter an integer number: "))
+#     op = input("Enter 'A' to Add to 'M' to Multiply: ")
+#
+#     if op == 'A':
+#         total +=n
+#         print(total)
+#
+#     elif op == 'M':
+#         total *=n
+#         print(total)
+#
+#     else: #OPTINAL
+#         print("Invalid Input. You wasted one of your loops.")
+#
+# print(total)
+
+
+######FIZZ BUZZ PRACTICE ###########################
+for i in range(1,101):
+    # print(i)
+    if i % 3 == 0 and i % 5 == 0:
+        print('Fizz Buzz')
+
+    elif i % 5 == 0:
+        print('Buzz')
+
+    elif i % 3 == 0:
+        print('Fizz')
+
+    else:
+        print(i)
 
 
 
