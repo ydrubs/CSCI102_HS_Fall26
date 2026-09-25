@@ -285,21 +285,21 @@ To add to a variable we can do the following for example:
 However, it is much more conventional to use augmented assignment to do the same thing:
         x +=2
 """
-a = 5
-b = 5
-print(a, b)
-
-a +=5
-b -=2
-print(a,b)
-
-
-c = 2
-d = 3
-
-c *=5
-d **=0.5
-print(c,d)
+# a = 5
+# b = 5
+# print(a, b)
+#
+# a +=5
+# b -=2
+# print(a,b)
+#
+#
+# c = 2
+# d = 3
+#
+# c *=5
+# d **=0.5
+# print(c,d)
 
 #################################PRACTICE###########################
 total = 1
@@ -323,19 +323,19 @@ total = 1
 
 
 ######FIZZ BUZZ PRACTICE ###########################
-for i in range(1,101):
-    # print(i)
-    if i % 3 == 0 and i % 5 == 0:
-        print('Fizz Buzz')
-
-    elif i % 5 == 0:
-        print('Buzz')
-
-    elif i % 3 == 0:
-        print('Fizz')
-
-    else:
-        print(i)
+# for i in range(1,101):
+#     # print(i)
+#     if i % 3 == 0 and i % 5 == 0:
+#         print('Fizz Buzz')
+#
+#     elif i % 5 == 0:
+#         print('Buzz')
+#
+#     elif i % 3 == 0:
+#         print('Fizz')
+#
+#     else:
+#         print(i)
 
 
 
@@ -347,67 +347,92 @@ Before the loop starts it checks whether the conidtion to start the loop is true
 """
 
 """ Ask for a number and add until you hit 1000 """
-pass
+# stop = 1000
+# total = 0
+#
+# while total <= stop:
+#     n = float(input("Enter a number: "))
+#     print(total)
+#     total +=n
 
-
-
-#slide 28 ACTIVITY
-pass
 
 
 
 ##Slide 29 - While Loop for entering data
-theSum = 0.0
+# theSum = 0.0
 # data = input('Enter a number or just enter to quit: ')
-pass
+#
+# while data != '':
+#     number = float(data)
+#     theSum +=number
+#     data = input('Enter a number or just enter to quit: ')
+#     print(theSum)
+
 
 
 
 ##Slide 30 - Breaking a loop
-theSum = 0.0
-
-while True:
-    # data = input("Enter a number or just enter to quit: ")
-    pass
+# theSum = 0.0
+#
+# while True:
+#     data = input("Enter a number or just enter to quit: ")
+#     if data == 'stop':
+#         break
+#
+#     print(data)
 
 
 ##Slide 32 - While loop to validate data
-pass
+
 
 
 ##Slide 33 - The While and the Boolean flag
-
-
+# done = False
+#
+# while not done:
+#     number = int(input("Please enter a number: "))
+#     if number >=0 and number <=100:
+#         print("setting done to true")
+#         done = True
+#
+#     else:
+#         print("error grade must be between 0 and 100")
+#         print(number)
 
 
 
 #Slide 34 - Common While loop errors
 
 ################  Fail to break loop
-while True:
-    number = int(input('Enter the numeric grade: '))
-    if number >= 0 and number <= 100:
-        print(number)
-        # NEED TO ADD 'break'
-
-    else:
-        print('Error: grade must be between 100 and 0')
-        print(number) # Just echo the valid input
+# while True:
+#     number = int(input('Enter the numeric grade: '))
+#     if number >= 0 and number <= 100:
+#         print(number)
+#         # NEED TO ADD 'break'
+#         break
+#
+#     else:
+#         print('Error: grade must be between 100 and 0')
+#         print(number) # Just echo the valid input
 
 ################    infinite Loop, not updating variable
-a = 0
-count = 0
-while a < 1000:
-    count += 1
-    print(a, count)
-
+# a = 0
+# count = 0
+#
+# while a < 1000:
+#     count += 1
+#     print(a, count)
+#     a +=1
+    # if count == 1000:
+    #     break
+    #
 ###############    Did not test for a = 500 condition
-a = 0
-
-while a < 1000:
-    a +=1
-    if a < 500:
-        print("Boom", a)
-    if a > 500:
-        print('Pow', a)
-    ##Doesn't test a = 500
+# a = 0
+#
+# while a < 1000:
+#     a +=1
+#     if a < 500:
+#         print("Boom", a)
+#     if a > 500:
+#         print('Pow', a)
+#     #Doesn't test a = 500
