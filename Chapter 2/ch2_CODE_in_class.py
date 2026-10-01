@@ -452,7 +452,7 @@ while True:
     else:
         print('Invalid Input')
 
-print(f"The sequence is: {sequence}")
+print(f"The sequence is -  {sequence}")
 
 count_c = 0
 for letter in sequence:
