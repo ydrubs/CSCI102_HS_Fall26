@@ -121,7 +121,32 @@ separates the name of the variable and the name of the function into two complet
 ############################################################
 # In-class coin flip simulator (mote carlo simulation)
 
-# Exercise needed
+from random import randint
+
+simulations = 1000
+sum_of_flips = 0
+
+for i in range(simulations):
+    flip_count = 0
+    head_count = 0
+    desired_heads = 3
+
+    while head_count < desired_heads:
+        flip_count +=1
+        flip_result = randint(0,1) # 0 = HEADS 1 = TAILS
+        # print(flip_result)
+
+        if flip_result == 0:
+            head_count +=1
+
+        else:
+            head_count = 0
+
+    print(f"It took {flip_count} to get {desired_heads} in a row.")
+    sum_of_flips+=flip_count
+
+print(f"It took an average of {sum_of_flips/simulations} flips across {simulations} to get three heads in a row")
+
 ############################################################
 
 
@@ -332,12 +357,12 @@ pass
 
 
 # --- Slide 33 Whole list operations
-from random import randint
-lst = []
-for i in range(10):
-    lst.append(randint(1, 100))
-
-print(lst)
+# from random import randint
+# lst = []
+# for i in range(10):
+#     lst.append(randint(1, 100))
+#
+# print(lst)
 
 pass
 
