@@ -121,38 +121,40 @@ separates the name of the variable and the name of the function into two complet
 ############################################################
 # In-class coin flip simulator (mote carlo simulation)
 
-from random import randint
-
-simulations = 1000
-sum_of_flips = 0
-
-for i in range(simulations):
-    flip_count = 0
-    head_count = 0
-    desired_heads = 3
-
-    while head_count < desired_heads:
-        flip_count +=1
-        flip_result = randint(0,1) # 0 = HEADS 1 = TAILS
-        # print(flip_result)
-
-        if flip_result == 0:
-            head_count +=1
-
-        else:
-            head_count = 0
-
-    print(f"It took {flip_count} to get {desired_heads} in a row.")
-    sum_of_flips+=flip_count
-
-print(f"It took an average of {sum_of_flips/simulations} flips across {simulations} to get three heads in a row")
+# from random import randint
+#
+# simulations = 1000
+# sum_of_flips = 0
+#
+# for i in range(simulations):
+#     flip_count = 0
+#     head_count = 0
+#     desired_heads = 3
+#
+#     while head_count < desired_heads:
+#         flip_count +=1
+#         flip_result = randint(0,1) # 0 = HEADS 1 = TAILS
+#         # print(flip_result)
+#
+#         if flip_result == 0:
+#             head_count +=1
+#
+#         else:
+#             head_count = 0
+#
+#     print(f"It took {flip_count} to get {desired_heads} in a row.")
+#     sum_of_flips+=flip_count
+#
+# print(f"It took an average of {sum_of_flips/simulations} flips across {simulations} to get three heads in a row")
 
 ############################################################
 
 
 # --- Slide 9 Characters
-pass
-
+# print('A' < 'a')
+#
+# print(ord('a'))
+# print(chr(970))
 
 
 # --- Slide 10 Characters
@@ -172,26 +174,39 @@ Creating a simple Ceaser Cipher
 message = "hello"
 longer_message = "How are you doing today?"
 
-pass
-
-
+# print(len(message)) # has 5 characters
+# print(len(longer_message))  # has has 24 character
+#
 
 
 # --- Slide 12 Strings - Indexing
-pass
+# print(message[0]) #Prints 'h'
+# print(message[2]) # Prints 'l'
+# print(message[5]) # ERROR
+
 
 
 # --- Slide 13 Strings - Indexing
-pass
+# print(message[-1])
+# print(message[-2])
 
 
 
 #Slide 14 Strings - Looping
-pass
+# Two ways to loop
+    # 1) Using the index
+    # 2) Use the character itself
 
+for i in range(len(message)):
+    print(i, message[i])
 
+for c in message:
+    print(c)
 
-pass
+# DON'T HAVE TO KNOW IT FOR THE TEST
+for i,c in enumerate(message):
+    print(message[i], c)
+
 
 
 #--- Slide 15 Your Turn
