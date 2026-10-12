@@ -50,6 +50,9 @@ Example output:
 
 Hints:
 
+    - You may find the itertools library useful, particularly the combinations()
+    function, which can generate different combinations of rooms for you to evaluate.
+
     - You do NOT have to collect treasure from every other room.
 
     - At each room, you have two choices:
