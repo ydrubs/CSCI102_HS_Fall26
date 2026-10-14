@@ -197,16 +197,16 @@ longer_message = "How are you doing today?"
     # 1) Using the index
     # 2) Use the character itself
 
-for i in range(len(message)):
-    print(i, message[i])
-
-for c in message:
-    print(c)
-
-# DON'T HAVE TO KNOW IT FOR THE TEST
-for i,c in enumerate(message):
-    print(message[i], c)
-
+# for i in range(len(message)):
+#     print(i, message[i])
+#
+# for c in message:
+#     print(c)
+#
+# # DON'T HAVE TO KNOW IT FOR THE TEST
+# for i,c in enumerate(message):
+#     print(message[i], c)
+#
 
 
 #--- Slide 15 Your Turn
@@ -216,53 +216,63 @@ pass
 
 
 # --- Slide 17 Slicing for substrings
-some_string = 'The quick brown fox jumped over the lazy dog'
-
-pass # The whole message
-pass # Start at character 4 and go till end
-
-
-pass # Start at character 4 and go till 8
-pass # Char 4 till end
+# some_string = 'The quick brown fox jumped over the lazy dog'
+#
+# print(some_string[0:len(some_string)]) # The whole message
+# print(some_string[:]) # SAME THING as above
+#
+# print(some_string[4:]) # Start at character 4 and go till end
 
 
-pass # Third to last char until end
-pass # 8'th to last char until 5 to last
+# print(some_string[4:9]) # Start at character 4 and go till 8 ('quick')
 
-pass # Entire string but only every other character displayed
-pass # Entire Sting Backwards
 
-pass # Combine slices (Prints 'The dog')
+# print(some_string[-3:]) # Third to last char until end ('dog')
+#
+# print(some_string[-8:-4]) # 8'th to last char until 5 to last
+#
+# print(some_string[::2]) # Entire string but only every other character displayed
+# print(some_string[::-1]) # Entire Sting Backwards
+# print("racecar"[::-1]) # backwards (kind of)
+#
+# print(some_string[0:3] + some_string[-4:]) # Combine slices (Prints 'The dog')
 
 
 # --- Slide 18 Your turn - Move Two Letters
-pass
-
-
+# thing = input("enter a word son: ")
+# print(thing[2:] + thing[0:2])
 
 
 # --- Slide 20 String Methods
-superhero = 'the incredible hulk'
-
-pass
+# superhero = 'the incredible hulk'
+#
+# print(superhero.upper())
+# print(superhero.upper)
+#
+# print(superhero.title())
+# print(superhero.lower())
 
 
 
 # --- Slide 21 String Methods
 address = '123 Fake St.'
 
-pass
+# print(address.isupper())
+# print(address.isdigit())
+
+
 
 # Check which characters are digits
-pass
+# for c in address:
+#     print(c.isdigit())
 
 # Check which characters are uppercase
-for char in address:
-    pass
+# for c in address:
+#     print(c, c.isupper())
 
 # Check which characters are lowercase
-for char in address:
-    pass
+# for c in address:
+#     print(c, c.isalnum())
 
 
 ########## In class exercise (string methods) ############################
