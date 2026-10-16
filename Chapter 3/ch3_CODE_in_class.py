@@ -255,7 +255,7 @@ pass
 
 
 # --- Slide 21 String Methods
-address = '123 Fake St.'
+# address = '123 Fake St.'
 
 # print(address.isupper())
 # print(address.isdigit())
@@ -276,7 +276,25 @@ address = '123 Fake St.'
 
 
 ########## In class exercise (string methods) ############################
-pass
+"""
+
+Ask the user for an input string.
+
+The program should:
+    1) Count and display how many lower-case letters the string has
+    2) print a new string that only contains the uppercase letters from the string 
+        the user entered.
+
+
+For example:
+    If the user enters: 'The Quick Brown Fox Jumped Over the Lazy Dog'
+        1) The lower-case letter count would be 28
+        2) The string printed should be: 'TQBFJOLD'
+
+                Since those are the capital letters in the first string
+"""
+
+
 ####################################################################################
 
 
