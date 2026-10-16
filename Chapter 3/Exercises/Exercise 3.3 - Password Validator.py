@@ -30,6 +30,8 @@ As the loop checks each character:
 After checking the password:
     - Display "Valid Password" if ALL requirements are met
     - Otherwise, display "Invalid Password"
+    - KEEP ASKING UNTIL the user enters something valid
+
 
 
 Optional features (Not required):
