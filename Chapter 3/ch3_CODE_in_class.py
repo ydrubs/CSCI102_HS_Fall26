@@ -293,33 +293,69 @@ For example:
 
                 Since those are the capital letters in the first string
 """
+# my_message = input("Enter your password: ")
+# lower_case_count = 0
+# upper_string = ''
+#
+#
+# for c in my_message:
+#     if c.islower():
+#         lower_case_count +=1
+#
+#     elif c.isupper():
+#         upper_string +=c
+#
+# print(f"There are {lower_case_count} lower case letters")
+# print(f"The upper case string is {upper_string}")
+
 
 
 ####################################################################################
 
 
 # --- Slide 22 String Methods - split
-story = "A long time ago in a galaxy far far away."
-
-pass
-
+# story = "A long time ago in a galaxy far far away."
+#
+# words = story.split()
+# print(words)
+#
+# print(words[1]) # long
 
 # --- Slide 23 Testing for a Substring
-text = """A long time ago in a galaxy far far away..
-It is a period of civil war.
-Rebel spaceships, striking
-from a hidden base, have won
-their first victory against
-the evil Galactic Empire."""
-
-
-pass
+# text = """A long time ago in a galaxy far far away..
+# It is a period of civil war.
+# Rebel spaceships, striking
+# from a hidden base, have won
+# their first victory against
+# the evil Galactic Empire."""
+#
+#
+# print('time' in text) # TRUE
+# print('galactic' in text) # FALSE
+# print('galactic' in text.casefold()) # TRUE
+#
+# print(text.index('Time')) # Brendon was right - this is an error
 
 
 
 # --- Slide 24 - Boolean Flags
-"""Check if a string has the letter A and a number in it"""
-pass
+"""Check if a string has the letter A"""
+while True:
+    my_string = input("Please enter a string")
+
+    # Set flag
+    has_a = False
+
+    if 'A' in my_string:
+        has_a = True
+
+    # Check all your flags for True in order to not repeat the loop
+    if has_a:
+        print("Nice you have an A in your string.")
+        break
+    else:
+        print("No A you goof!")
+
 
 
 
