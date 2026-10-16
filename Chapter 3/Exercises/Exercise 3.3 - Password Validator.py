@@ -31,6 +31,17 @@ After checking the password:
     - Display "Valid Password" if ALL requirements are met
     - Otherwise, display "Invalid Password"
 
+
+Optional features (Not required):
+    1) Add a fifth condition in which a special character (!,@,#,$,%,^,&,*,(, or ))
+       needs to be included before a password is valid
+
+    2) If the password is valid, ask the user to confirm the password by re-entering
+        it before accepting. If the confirmed password is different then the original,
+        the process starts over (asks the user for a password, does validity check,
+        asks for confirmation).
+
+
 Hint:
 
     You do not need to count how many uppercase letters, lowercase letters,
