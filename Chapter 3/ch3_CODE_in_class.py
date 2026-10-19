@@ -340,56 +340,73 @@ For example:
 
 # --- Slide 24 - Boolean Flags
 """Check if a string has the letter A"""
-while True:
-    my_string = input("Please enter a string")
-
-    # Set flag
-    has_a = False
-
-    if 'A' in my_string:
-        has_a = True
-
-    # Check all your flags for True in order to not repeat the loop
-    if has_a:
-        print("Nice you have an A in your string.")
-        break
-    else:
-        print("No A you goof!")
+# while True:
+#     my_string = input("Please enter a string")
+#
+#     # Set flag
+#     has_a = False
+#
+#     if 'A' in my_string:
+#         has_a = True
+#
+#     # Check all your flags for True in order to not repeat the loop
+#     if has_a:
+#         print("Nice you have an A in your string.")
+#         break
+#     else:
+#         print("No A you goof!")
 
 
 
 
 
 # --- Slide 26 Mutable vs. Immutable Data
-mutable = ['G', 'O', 'O', 'D']
-pass
+# mutable = ['G', 'O', 'O', 'D']
+# print(mutable[0]) # Print 'G'
+
+# mutable[0] = 'hello'
+# print(mutable)
+
 
 # immutable = 'Good'
+# print(immutable[0])
+# immutable[0] = 'hello' #This command is NOT fine
+
+# immutable = 'BAD' #...But you can override the variable itself
 # print(immutable)
-pass #This command is fine
-
-pass # ..This is not. Can't override the individuals characters
-pass #...But you can override the variable itself
-
 
 
 
 
 # --- Slide 28 Declaring Lists
-pass # Three element list
-pass # Lists can mix data types
-pass # Lists can contain other lists
-pass # Lists can be empty
+# my_list = [] # EMPTY LIST
+# print(type(my_list))
+# print(len(my_list))
+#
+# fruits = ['apple', 'orange', 'Kiwi'] # Three element list
+#
+# profile = ['jon', 30, True] # Lists can mix data types
 
-pass # lists have a length
-pass # Lists can be indexed
-pass
+# coordinates = [[-3,1], [0,4], [3.5, 2.6]] # Lists can contain other lists
+# print(coordinates[1])
+# print(coordinates[1][0]) # Returns the first element of the second list
+#
+#
+# print(len(coordinates)) # lists have a length
+# print(len(coordinates[0]))
+#
+#  # Lists can be indexed
+# print(coordinates[-1]) # The last element
+#
 
-
-pass  # Elements of sublists can be accessed from within a list
 
 # --- Lists can store the result of other operation
-pass
+# x = 2
+#
+# lst = [x, x**0.5, x+1]
+# print(lst)
+#
+
 
 
 # --- Slide 29 Your turn
@@ -402,17 +419,22 @@ pokemon = ["Pikachu", "Eevee", "Charmander", "Squirtle"]
 
 ## 1) Using the ‘append’ method (most common)
     ## Adds the element to the end of a list
-pass
+pokemon.append('Mew')
+print(pokemon)
 
 
 ## 2) Using the .insert method
     ## Adds the element at the index specified
-pass
+pokemon.insert(1, 'Snoralax')
+print(pokemon)
 
 
 ## 3) Using the .extend method
     ## Adds the elements of the first list to the second to create a combined list
-pass
+new_pokemon = ['Articuno', 'Zapdos', 'Moltres']
+
+pokemon.extend(new_pokemon)
+print(pokemon)
 
 
 
