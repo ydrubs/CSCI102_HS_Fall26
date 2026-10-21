@@ -35,7 +35,7 @@ In this chapter, we learn how to:
 
     - Sort lists and understand the difference between sort() and sorted().
 """
-
+from shlex import join
 
 # --- Slide 6 (Importing Libraries - Random)
 """
@@ -419,65 +419,97 @@ pokemon = ["Pikachu", "Eevee", "Charmander", "Squirtle"]
 
 ## 1) Using the ‘append’ method (most common)
     ## Adds the element to the end of a list
-pokemon.append('Mew')
-print(pokemon)
-
-
-## 2) Using the .insert method
-    ## Adds the element at the index specified
-pokemon.insert(1, 'Snoralax')
-print(pokemon)
+# pokemon.append('Mew')
+# print(pokemon)
+#
+#
+# ## 2) Using the .insert method
+#     ## Adds the element at the index specified
+# pokemon.insert(1, 'Snoralax')
+# print(pokemon)
 
 
 ## 3) Using the .extend method
     ## Adds the elements of the first list to the second to create a combined list
-new_pokemon = ['Articuno', 'Zapdos', 'Moltres']
-
-pokemon.extend(new_pokemon)
-print(pokemon)
+# new_pokemon = ['Articuno', 'Zapdos', 'Moltres']
+#
+# pokemon.extend(new_pokemon)
+# print(pokemon)
 
 
 
 # --- Slide 31 Application - Adding to a list by looping
 # roster_size = int(input("Enter the number of people to add: ")) #Get input about number
 # roster_lst = [] #Create an empty list to hold the people
+#
+# for i in range(roster_size): #Loop through however many people we said we wanted to add
+#     name = input("Please enter the name of the person: ") #Get the persons name
+#     roster_lst.append([name]) #Add the person to the end of the roster list
+#
+# print(roster_lst) #print results
 
-pass #Loop through however many people we said we wanted to add
-pass #Get the persons name
-pass #Add the person to the end of the roster list
-
-pass #print results
 
 
 # --- Slide 32 Application – Filtering a list
 people = ['Jack', 'Frank', 'Macy', 'Nancy', 'Bill']
 
-revised_people = []
+second_a = []
+at_least_5 = []
 
-pass
+"""
+Your task
+    1) Print a new list with only the people who have ‘a’ as the second letter in their name.
+    2) Print ANOTHER new list with people whose name has 5 or more characters in it
+"""
+# print(people[0].index('a')) # Probably inefficient here
+# for i in range(len(people)):
+#     test = people[i]
+#     print(test)
+#     if test[1] == 'a':
+#         second_a.append(people[i])
+
+# for person in people:
+#     # print(person)
+#     if person[1] == 'a':
+#         second_a.append(person)
+#
+# print(second_a)
+
+# for person in people:
+#     if len(person) >= 5:
+#         at_least_5.append(person)
+# print(at_least_5)
+
 
 
 # --- Slide 33 Whole list operations
 # from random import randint
 # lst = []
-# for i in range(10):
+# for i in range(100):
 #     lst.append(randint(1, 100))
 #
 # print(lst)
-
-pass
-
-
-# --- Slide 34 Skill Review – Getting Input until break
-##Stopping a loop when the 'enter' key is pressed.
-pass
+#
+# print(max(lst))
+# print(min(lst))
+# print(sum(lst))
 
 
 
 
 # --- Slide 36 Replacing and Removing Elements
 lst= [1,2,3,4]
-pass
+# lst[5] = 100 # Index Error, thanks Brenden!
+
+lst[2] = 1000
+print(lst)
+
+n = lst.pop() # Removes the last element
+print(lst)
+print(n)
+
+n2 = lst.pop(0)
+print(lst)
 
 
 
