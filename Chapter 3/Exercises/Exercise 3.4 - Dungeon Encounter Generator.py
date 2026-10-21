@@ -6,6 +6,7 @@ Slides to Review (if necessary):
     Slides 1-8: Random numbers and randint()
     Slides 27-28: Lists and list indexing
     Slides 30-31: Adding elements to lists with append() and loops
+    Slide 36: The pop() method 
 
 Write a program that randomly places enemies into the rooms of a dungeon.
 
@@ -27,7 +28,7 @@ Start with the following list:
            encounters = ["Skeleton", "Slime", "Ghost", "Skeleton", "Goblin"]
 
     4. After all rooms have been filled, loop through the completed
-       encounters list and display the enemy found in each room.
+       encounters list and display the enemy found in each room using the pop() method.
 
 
     Example input:
@@ -50,5 +51,5 @@ Hint:
     Remember that len() can help you determine the last valid
     index of a list.
 """
-
+enemies = ["Slime", "Skeleton", "Goblin", "Spider", "Ghost"]
 # YOUR CODE HERE
