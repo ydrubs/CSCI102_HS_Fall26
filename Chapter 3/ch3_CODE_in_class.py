@@ -498,36 +498,49 @@ Your task
 
 
 # --- Slide 36 Replacing and Removing Elements
-lst= [1,2,3,4]
-# lst[5] = 100 # Index Error, thanks Brenden!
-
-lst[2] = 1000
-print(lst)
-
-n = lst.pop() # Removes the last element
-print(lst)
-print(n)
-
-n2 = lst.pop(0)
-print(lst)
-
-
+# lst= [1,2,3,4]
+# # lst[5] = 100 # Index Error, thanks Brenden!
+#
+# lst[2] = 1000
+# print(lst)
+#
+# n = lst.pop() # Removes the last element
+# print(lst)
+# print(n)
+#
+# n2 = lst.pop(0)
+# print(lst)
+#
+#
 
 # --- Slide 37 Manipulating List Elements With Loops
 """
 Square each integer in the list and overwrite the original in that position
 """
-numbers = [2,3,4,5]
-pass
+numbers = [2,3,4,5,16]
+
+# for i in range(len(numbers)):
+#     numbers[i] = numbers[i] **2
+#
+# print(numbers)
+
+
 
 
 """
 Remove the space character and capitalize the first letter of each name
 """
-names = ["  alice", "bob  ", "  charlie  "]
+names = ["  alice smith", "bob  ", "  charlie  "]
 cleaned_names = []
 
-pass
+for name in names:
+    clean_name = name.strip()
+    clean_name = clean_name.title()
+    cleaned_names.append(clean_name)
+
+print(cleaned_names)
+
+print(' '.capitalize(), 't')
 
 
 
@@ -540,7 +553,8 @@ By default, it sorts the list from low to high.
 
 This is called sort-in-place because it changes the original lsit so we cannot reference it in the original (unsorted) way anymore
 """
-pass
+# high_NFL_scores.sort()
+# print(high_NFL_scores)
 
 
 
@@ -552,16 +566,25 @@ Notice that if we use the sorted() method, we get the orignal list with nothing 
 This happens because sorted() returns a NEW list that is sorted, leaving the orignal one intact. 
 In order to see it we need to save it to a variable.
 """
-pass
+# high_scores = sorted(high_NFL_scores)
+# print(high_NFL_scores)
+# print(high_scores)
 
+# names = ['Tyler', "Brenden", 'Abby']
+# names.sort()
+# print(names)
 
-pass
-
+# high_NFL_scores.sort(reverse = True)
+# print(high_NFL_scores)
+#
+# n = ['a', str(10), str(152), str(150), str(15), str(100)]
+# n.sort()
+# print(n)
 
 """
 To sort in reverse we can add the 'reverse' parameter to our command. This works with both methods. 
 """
-pass
+
 
 
 # --- Slide 39 Searching and Filtering
@@ -579,5 +602,16 @@ pass
 Task 2:
 Create a new list that has elements that show up at least twice on the original list 
 """
-pass
+high_NFL_scores = [99, 101, 95, 113, 98, 96, 105, 101, 97, 103, 95, 106, 99, 98, 96]
+at_least_twice = []
+
+print(high_NFL_scores.count(99))
+
+for score in high_NFL_scores:
+    if high_NFL_scores.count(score) >= 2:
+        if score not in at_least_twice:
+            at_least_twice.append(score)
+
+
+print(at_least_twice)
 
