@@ -8,23 +8,43 @@
 
 # --- Slide 3 Tuples
 cards = ()  # Empty tuple container
-pass
-
+# print(type(cards))
+#
+# cards = (6,7,10, 'queen', 'king')
+# cards_full = ((2,'hearts'), (3, 'spades'))
+#
+# print(cards_full[0])
+# print(cards_full[0][1]) # first cards suit
+#
+# cars = ([2020, 'Chevy', 'Corvette'], [2023, 'Toyota', 'Prius'] )
 
 # Get element info from a tuple (similar to lists and string)
-pass
+# print(cars[1][2]) # Prius
 
 
 # --- Demonstrates you can't modify a tuple like you can a list
+# cards[0] = 'Ace'
 
 
 
 
-pass # If we change the cards tuple to a list we can manipulate elements
+# cards_full = list(cards_full) # If we change the cards tuple to a list we can manipulate elements
+# print(cards_full)
+# cards_full.append(('4', 'Diamonds'))
+# print(cards_full)
+#
+# cards_full = tuple(cards_full)
+# print(cards_full)
 
-pass  # Since the third element [2] in the first tuple is a list, it can be modified. We are not modifying the tuple itself
+# cars[0][2] = 'Chevelle'  # Since the third element [2] in the first tuple is a list, it can be modified. We are not modifying the tuple itself
+# print(cars)
 
+# print(hash(cards_full))
+# l = [1,2]
+# print(hash(l))
 
+# print(dir(cards_full))
+# print(dir(l))
 
 # --- Slide 4 Tuple Quick task
 """
@@ -39,7 +59,7 @@ Then:
     - Print your entire student profile. 
     - Use an index to print your caffeine level. 
     - Use an index to print your favorite food. 
-    - Try to change your hours of sleep to 10. 
+    - Try to change your hours of sleep to 10 unless it is already 10 then change it to something okay Tyler?!.,'"~ 
     - Explain: What happens? Why?
 """
 pass
@@ -56,13 +76,23 @@ rank_tuple = ('2', '3', '4', '5', '6', '7', '8', '9', '10', 'jack', 'queen', 'ki
 deck = []
 for suit in suit_tuple:
     for rank in rank_tuple:
-        pass  # Temporary variable to store the current card in loop
-        pass # Show the card for debugging
-        pass  # Add this card to the deck list
+        card = (rank, suit)  # Temporary variable to store the current card in loop
+        # print(card) # Show the card for debugging
+        deck.append(card)  # Add this card to the deck list
 
+print(deck)
+print(len(deck))
 
+random.shuffle(deck)
+print(deck)
 
+hand = []
+my_card = deck.pop()
+hand.append(my_card)
+print(hand)
 
+print(random.choice(deck))
+print(random.choices(deck, k = 5))
 
 # --- Slide 8 Defining Functions
 pass
@@ -212,15 +242,15 @@ pass  # This is okay because we reference a key
 
 
 # --- Slide 22 Adding and Removing Dictionary Entries
-cars = {'Ford':"Fusion", 'Toyota': "Camry", 'Jeep':"Wrangler"}
-cars["Honda"] = "Accord"
-print(cars)
-
-cars.pop("Toyota")
-print(cars)
-
-cars.pop("Ferrari")
-print(cars)
+# cars = {'Ford':"Fusion", 'Toyota': "Camry", 'Jeep':"Wrangler"}
+# cars["Honda"] = "Accord"
+# print(cars)
+#
+# cars.pop("Toyota")
+# print(cars)
+#
+# cars.pop("Ferrari")
+# print(cars)
 
 """
 Your turn 
@@ -319,21 +349,21 @@ pass  # Individually show each score that is read
 
 
 # --- Slide 36 Parsing data from a file
-f = open("myfile.txt", "r")
-lines = f.readlines()
-f.close()
+# f = open("myfile.txt", "r")
+# lines = f.readlines()
+# f.close()
 
 
 
-for line in lines:
-    pass
-    pass  # Separate name and score using the colon (:) as the seperator character
-    pass  # First item is the name
-    pass  # Convert score to an integer
+# for line in lines:
+pass
+pass  # Separate name and score using the colon (:) as the seperator character
+pass  # First item is the name
+pass  # Convert score to an integer
 
     #DEBUG INFO
-    pass  # Add score to running total
-    pass
+pass  # Add score to running total
+pass
 
 pass  # Calculate class average
 
@@ -346,11 +376,11 @@ Modify the myfile.txt program created earlier program to identify the student wi
 
     Print the name of the student and the score 
 """
-f = open("myfile.txt", "r")
-lines = f.readlines()
-f.close()
-
-
+# f = open("myfile.txt", "r")
+# lines = f.readlines()
+# f.close()
+#
+#
 
 
 # --- Slide 38 OS Module
