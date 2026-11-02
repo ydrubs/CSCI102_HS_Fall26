@@ -68,72 +68,122 @@ pass
 
 
 # --- Slide 6 Tuple Application - Building a Card deck for a game
-import random
-
-suit_tuple = ('hearts', 'diamomds', 'spades', 'clubs')
-rank_tuple = ('2', '3', '4', '5', '6', '7', '8', '9', '10', 'jack', 'queen', 'king', 'ace')
-
-deck = []
-for suit in suit_tuple:
-    for rank in rank_tuple:
-        card = (rank, suit)  # Temporary variable to store the current card in loop
-        # print(card) # Show the card for debugging
-        deck.append(card)  # Add this card to the deck list
-
-print(deck)
-print(len(deck))
-
-random.shuffle(deck)
-print(deck)
-
-hand = []
-my_card = deck.pop()
-hand.append(my_card)
-print(hand)
-
-print(random.choice(deck))
-print(random.choices(deck, k = 5))
+# import random
+#
+# suit_tuple = ('hearts', 'diamomds', 'spades', 'clubs')
+# rank_tuple = ('2', '3', '4', '5', '6', '7', '8', '9', '10', 'jack', 'queen', 'king', 'ace')
+#
+# deck = []
+# for suit in suit_tuple:
+#     for rank in rank_tuple:
+#         card = (rank, suit)  # Temporary variable to store the current card in loop
+#         # print(card) # Show the card for debugging
+#         deck.append(card)  # Add this card to the deck list
+#
+# print(deck)
+# print(len(deck))
+#
+# random.shuffle(deck)
+# print(deck)
+#
+# hand = []
+# my_card = deck.pop()
+# hand.append(my_card)
+# print(hand)
+#
+# print(random.choice(deck))
+# print(random.choices(deck, k = 5))
 
 # --- Slide 8 Defining Functions
-pass
-
-pass # Call The function
-
-pass  # Calling greeting without parenthesis (), does NOT run the function
-pass  # printing greeting without parenthesis, shows where the function is stored in computer memory
-pass  # Prints None because our function (greeting) does not return anything
+# def greeting():
+#     print("Hi Everyone")
+#
+# greeting() # Call The function
+# greeting()
+#
+# greeting  # Calling greeting without parenthesis (), does NOT run the function
+# print(greeting)  # printing greeting without parenthesis, shows where the function is stored in computer memory
+# print(greeting())  # Prints None because our function (greeting) does not return anything
 
 
 
 # --- Slide 9 The return statement
+def greeting():
+    # return "Hi Everyone"
+    print('Hi Everyone')
+    return 'a'
 
+# greeting()  # Does not display anything
 
+# message = greeting()  # Call the function and save what it returns to a variable
+# print(message)
 
-pass  # Does not display anything
+# print(greeting())
 
-pass  # Call the function and save what it returns to a variable
-
-
+# if greeting() == 'a':
+#     print('Yay Ayden')
 
 # ANOTHER EXAMPLE
+# def add():
+#     a = 2
+#     b = 3
+#     return a + b
+#
+# add() # It does something but you can't see it in the terminal
+#
+# print(add()) # Displays 5
+# answer = add()
+# print(answer)
 
+# print(answer ** 2)
 
 
 
 
 
 # --- Slide 10 Defining Functions with POSITIONAL PARAMETERS
+# def greeting(first_name):
+#     print(first_name)
+#     return f'Hi {first_name} '
 
+# my_greeting = (greeting()) # ERROR
+# print(my_greeting)
 
+# my_greeting = greeting(15)
+# print(my_greeting)
+# my_greeting = greeting('Yuriy')
+#
+# print(my_greeting)
 
-
+# def another_greeting(first_name, last_name):
+#
+#     return f'Call me {last_name}, {first_name}, {last_name}'
+#
+# my_greeting = another_greeting('Bond', 'James')
+# print(my_greeting)
 
 # --- Slide 11 Defining Functions with KEYWORD PARAMETERS
+# def greeting(first_name = 'Jon', last_name = 'Doe'):
+#     return f'Call me {last_name}, {first_name}, {last_name}'
 
+# my_greeting = greeting()
+# print(my_greeting)
+#
+# my_greeting = greeting(last_name='Bond')
+# print(my_greeting)
 
+# my_greeting = greeting(last_name='Bond', first_name='James')
+# print(my_greeting)
+#
+# my_greeting = greeting("James", 'Bond')
+# print(my_greeting)
 
-
-
+# my_greeting = greeting('James', last_name='Bond')
+# print(my_greeting)
+#
+# my_greeting = greeting(last_name = 'Bond', 'james')
+# print(my_greeting)
+#
 
 # --- Slide 12 Defining Functions with positional AND keyword parameters
 
