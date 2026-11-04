@@ -183,26 +183,47 @@ def greeting():
 #
 # my_greeting = greeting(last_name = 'Bond', 'james')
 # print(my_greeting)
+
+
+# def my_function():
+#     n = 67
+#     # return n + 3
+#     print(f"The answer is {n}")
+#     return n + 3
 #
+# answer = my_function()
+# print(answer)
 
 # --- Slide 12 Defining Functions with positional AND keyword parameters
+# def add(a, b = 67, c = 69):
+#     answer = a + b + c
+#     return answer
+#
+# n = add(41, b = 1)
+# print(n)
 
-
-
-
-
-# ANOTHER EXAMPLE
-
+"""
+IMPORTANT NOTE! 
+When defining a function - 
+    POSITIONAL parameters HAVE to come before KEYWORD parameters 
+"""
 
 
 
 
 # --- Slide 13 Your Turn
 """
-Write a function called find_bigger that takes two float values as parameters and returns the larger of the two. 
+Write a function called find_bigger that takes two float values as parameters 
+and returns the larger of the two. 
 """
-
-
+# def find_bigger(a,b):
+#     if a > b:
+#         return a
+#
+#     return b
+#
+# bigger = find_bigger(7.1, 17.1)
+# print(bigger)
 
 
 
@@ -216,7 +237,16 @@ For example, if the string is pass123word the return value is password
 
 Hint: Use a string method you learned in the previous chapter
 """
-
+# def no_ints(my_string):
+#     new_string = ""
+#     for char in my_string:
+#         if not char.isnumeric():
+#             new_string += char
+#
+#     return new_string
+#
+# result = no_ints('pass123word')
+# print(result)
 
 
 
@@ -226,10 +256,19 @@ Hint: Use a string method you learned in the previous chapter
 
 # --- slide 15 Function Application 2
 """
-Wrtie a function that accepts an integer and returns a list of its factors (integers divisisble by that number).
+Write function called factors that accepts an integer and returns a list of its factors 
+(integers divisisble by that number).
 """
-
-
+# def factors(n):
+#     my_factors = []
+#     for i in range(1, n + 1):
+#         if n % i == 0:
+#             my_factors.append(i)
+#
+#     return my_factors
+#
+# result = factors(71)
+# print(result)
 
 
 
