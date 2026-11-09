@@ -250,10 +250,6 @@ Hint: Use a string method you learned in the previous chapter
 
 
 
-
-
-
-
 # --- slide 15 Function Application 2
 """
 Write function called factors that accepts an integer and returns a list of its factors 
@@ -274,24 +270,36 @@ Write function called factors that accepts an integer and returns a list of its 
 
 
 # --- Slide 18 The Dictionary Data Type
-pass  # Empty Dictionary we can add entries to
-pass  # Example dictionary of car makes and models
+cars = {} # Empty Dictionary we can add entries to
+# print(type(cars))
+#
+cars = {'Ford': 'Fusion', 'Toyota':"Camry"}  # Example dictionary of car makes and models
 
 
 # Dictionary KEYS can be any IMMUTABLE data type (int, string, float, tuple), while VALUES can be of ANY type
 character = {
     "names": ["Arin", "Luna", "Thorin"],
-    "races": ["Elf", "Human", "Dwarf"],
+    "races": ["Elf", "Human", "Dwarf", 'Orc'],
     "classes": ["Wizard", "Rogue", "Fighter"],
     "weapons": ["Staff", "Dagger", "Axe"]
 }
 
+# print(character['races']) # prints a list of races from dictionary
+# print(character['races'][1]) # prints human
+
+# print(character[0]) # Error because you can access dictionaries with int indexes
+
+# print(len(character)) # Shows how many associations in the dictionary
+#
+# print(character.keys())
+#
+# print(len(character['races']))
 
 """
 What happens if a dictionary key is a mutable type such as a list?
 """
-# character = {["Arin", "Luna", "Thorin"] : 'names'}
-
+# character = {'player #' : 1, ["Arin", "Luna", "Thorin"] : 'names'}
+# print(character)
 
 
 # ---Slide 19 Your Turn
@@ -307,16 +315,18 @@ Create a dictionary to store your weekly activities with:
 For example, one entry could say: 
 	("Mon", "4 PM"): "Soccer Practice"
 """
-
+# my_schedule = {("Mon", "4 PM"): "Soccer Practice"}
 
 
 
 # --- Slide 20 Dictionaries Are Unordered
-pass #This gives an Error because we can't use indexes
+cars = {'Ford': 'Fusion', 'Toyota':"Camry"}
+# print(cars[0]) #This gives an Error because we can't use indexes
 
-pass  # This is okay because we reference a key
+print(cars['Ford']) # This is okay because we reference a key
+# print(cars['ford']) # This will be an ERROR
 
-
+# print(character.get('Porche'))
 
 # --- Slide 21 Dictionary Keys Must Be Unique
 # fords = {'Ford': 'Mustang', 'Ford': 'Fusion', 'Ford': 'F150'}
@@ -325,21 +335,23 @@ pass  # This is okay because we reference a key
 
 
 # BETTER
-# fords = {'Fords': ["Mustang", "Fusion", "F150"]}
-
-
+# fords = {'Fords': ["Mustang", "Fusion", "F150", "Model T"]}
 
 
 # --- Slide 22 Adding and Removing Dictionary Entries
-# cars = {'Ford':"Fusion", 'Toyota': "Camry", 'Jeep':"Wrangler"}
-# cars["Honda"] = "Accord"
+cars = {'Ford':"Fusion", 'Toyota': "Camry", 'Jeep':"Wrangler"}
+cars["Honda"] = "Accord"
+print(cars)
+print(len(cars))
+
+# cars.pop('Toyota')
 # print(cars)
 #
-# cars.pop("Toyota")
-# print(cars)
-#
-# cars.pop("Ferrari")
-# print(cars)
+# if cars.get('Ferrari') != None:
+#     cars.pop("Ferrari")
+#     print(cars)
+# else:
+#     print("No Ferrari")
 
 """
 Your turn 
@@ -348,18 +360,33 @@ Your turn
        (Save the pop to a varaible). 
 """
 
+# new_car_make = input("What make of car did you buy: ")
+#
+# new_car_model = cars.pop(new_car_make)
+# print(f"The {new_car_make} {new_car_model} was purchased")
+
+
 # --- Slide 23 Getting all keys and values in a dictionary
-pass  # Use the .keys method to see all the .keys in a given dictionary
+cars = {'Ford':"Fusion", 'Toyota': "Camry", 'Jeep':"Wrangler"}
+print(cars.keys())  # Use the .keys method to see all the .keys in a given dictionary
 
-pass  # Use the .values method to see all the values in a given dictionary
+print(cars.values())  # Use the .values method to see all the values in a given dictionary
 
-pass  # Use the .items method to see all the key-value pairs in a dictionary as tuples
+print(cars.items())  # Use the .items method to see all the key-value pairs in a dictionary as tuples
 
 # --- Slide 24 Looping over dictionary entries
-pass
+for makes in cars.keys():
+    print(makes)
 
 
-
+# for models in cars.values():
+#     print(models)
+#
+# for both in cars.items():
+#     print(both)
+#
+# for make, model in cars.items():
+#     print(make, model)
 
 
 # --- Slide 25 You Try 1
