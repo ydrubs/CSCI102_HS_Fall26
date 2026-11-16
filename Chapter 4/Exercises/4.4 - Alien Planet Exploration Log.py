@@ -2,7 +2,7 @@
 Exercise 4.4 - Alien Planet Exploration Log
 
 IMPORTANT! In order for the program to work you need to download (or create)
-           a file called exploration_report.txt whose contents are found in github.
+           a file called planets.txt whose contents are found in github.
            It needs to be placed in the same directory as this exercise.
 
 
