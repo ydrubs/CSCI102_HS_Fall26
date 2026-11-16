@@ -323,7 +323,7 @@ For example, one entry could say:
 cars = {'Ford': 'Fusion', 'Toyota':"Camry"}
 # print(cars[0]) #This gives an Error because we can't use indexes
 
-print(cars['Ford']) # This is okay because we reference a key
+# print(cars['Ford']) # This is okay because we reference a key
 # print(cars['ford']) # This will be an ERROR
 
 # print(character.get('Porche'))
@@ -340,9 +340,9 @@ print(cars['Ford']) # This is okay because we reference a key
 
 # --- Slide 22 Adding and Removing Dictionary Entries
 cars = {'Ford':"Fusion", 'Toyota': "Camry", 'Jeep':"Wrangler"}
-cars["Honda"] = "Accord"
-print(cars)
-print(len(cars))
+# cars["Honda"] = "Accord"
+# print(cars)
+# print(len(cars))
 
 # cars.pop('Toyota')
 # print(cars)
@@ -368,15 +368,15 @@ Your turn
 
 # --- Slide 23 Getting all keys and values in a dictionary
 cars = {'Ford':"Fusion", 'Toyota': "Camry", 'Jeep':"Wrangler"}
-print(cars.keys())  # Use the .keys method to see all the .keys in a given dictionary
-
-print(cars.values())  # Use the .values method to see all the values in a given dictionary
-
-print(cars.items())  # Use the .items method to see all the key-value pairs in a dictionary as tuples
+# print(cars.keys())  # Use the .keys method to see all the .keys in a given dictionary
+#
+# print(cars.values())  # Use the .values method to see all the values in a given dictionary
+#
+# print(cars.items())  # Use the .items method to see all the key-value pairs in a dictionary as tuples
 
 # --- Slide 24 Looping over dictionary entries
-for makes in cars.keys():
-    print(makes)
+# for makes in cars.keys():
+#     print(makes)
 
 
 # for models in cars.values():
@@ -407,10 +407,15 @@ characters = {
     "ranger": ("HP", 75)
 }
 
+# for value in characters.values():
+#     # print(value)
+#     if value[1] > 70:
+#         print(value)
 
-
-
-
+# for key, value in characters.items():
+#     # print(key, value)
+#     if value[1] > 70:
+#         print(key)
 
 # --- Slide 26 You Try 2
 """
@@ -430,60 +435,67 @@ l2 = [1, 2, 3]
 
 
 # --- Slide 30 Writing Text to a file
-pass  # Open file in write mode
-
-pass  # Write first record and start a new line
-pass  # Write second record and start a new line
-pass  # Write final record
-
-pass  # Close the file
-
-
-
+# f = open("myfile.txt", 'w')  # Open file in write mode
+#
+# f.write("Alex: 95\n") # Write first record and start a new line
+# f.write("Jordan: 87\n")  # Write second record and start a new line
+# f.write("Taylor: 92\n")  # Write final record
+#
+# f.close()  # Close the file
 
 
 # --- Slide 33 Writing Numbers to a file
-
-
-
+# import random
+#
+# f = open('integers.txt', 'w')
+#
+# for count in range(500):
+#     number = random.randint(1,500)
+#     f.write(str(number) + '\n')
+#
+# f.close()
+#
 
 
 
 # --- Slide 34 Reading Text from a file
+# f = open('myfile.txt', 'r')
+#
+#
+# lines = f.readlines()  # Writes each line into a list
+# print(lines)
+# print(lines[0][3]) # Print the letter e
+#
 
-
-
-pass  # Writes each line into a list
-pass
-
-
-
-
-pass  # Individually show each score that is read
-
+# for line in lines:  # Individually show each score that is read
+#     print(line, end = "")
 
 
 
 # --- Slide 36 Parsing data from a file
-# f = open("myfile.txt", "r")
-# lines = f.readlines()
-# f.close()
+f = open("myfile.txt", "r")
+lines = f.readlines()
+f.close()
 
+print(len(lines)) # prints 3 because there are three entries
 
+total = 0
 
-# for line in lines:
-pass
-pass  # Separate name and score using the colon (:) as the seperator character
-pass  # First item is the name
-pass  # Convert score to an integer
+for line in lines:
+    data = line.split(':')  # Separate name and score using the colon (:) as the seperator character
+    # print(data[1])
+    name = data[0]  # First item is the name
+    score = int(data[1]) # Convert score to an integer
 
     #DEBUG INFO
-pass  # Add score to running total
-pass
+    total += score   # Add score to running total
+    print(name, 'scored', score)
 
-pass  # Calculate class average
+class_avg = total/len(lines)  # Calculate class average
+print(f'The class average was {class_avg}')
 
-
+if class_avg > 90:
+    print("Yay you all did great!")
 
 
 # --- Slide 37  You try
@@ -492,12 +504,24 @@ Modify the myfile.txt program created earlier program to identify the student wi
 
     Print the name of the student and the score 
 """
-# f = open("myfile.txt", "r")
-# lines = f.readlines()
-# f.close()
-#
-#
+f = open("myfile.txt", "r")
+lines = f.readlines()
+f.close()
 
+high_score = 0 # Keep track of high score
+name_high = '' # Keep track of name for high score
+
+
+for line in lines:
+
+    data = line.split(":")  # Separate name and score using the colon (:) as the seperator character
+    score = int(data[1])
+
+    if score > high_score: # Check if the current score is higher then the previous
+        high_score = score # if it is store the score
+        name_high = data[0] # and the name to go with it
+
+print(f"{name_high} had the highscore of {high_score}.") # Display result for high score
 
 # --- Slide 38 OS Module
 """
