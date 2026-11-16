@@ -5,4 +5,3 @@ TRAPPIST-1e,18,6
 Nova-Prime,42,9
 Zorgon-5,-48,2
 Pandora,27,7
-planets.txt
